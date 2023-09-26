@@ -51,14 +51,14 @@ body h1 {
     bottom: 35%;
     
 }
-.temperature {
+/* .temperature {
     color: rgb(255, 254, 254);
     font-size: 40px;
     position: absolute;
     top: 1%;
     right: 4%;
     
-}
+} */
 
 /* Estilos para el texto de la cita */
 .quote {
@@ -71,7 +71,7 @@ body h1 {
     height:150px; 
     width:370px;
     border:1px solid #f1c40f;
-    margin: 100px auto;
+    margin: 50px auto;
     text-align:center;
     position:relative;
     color:#fff;
