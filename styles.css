@@ -1,0 +1,127 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+body h1 {
+    font-size: 42px;
+    color: #eae7e7;
+    margin-bottom: 20px;
+}
+
+.background {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Moving image to the back */
+    z-index: -1;
+
+    /* Darkening the image so that white font shows up clearer */
+    filter: brightness(70%);
+  }
+  
+  @media screen and (max-width: 1024px) { 
+    .background {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+
+#temperatura {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 35%;
+    
+}
+.temperature {
+    color: rgb(255, 254, 254);
+    font-size: 40px;
+    position: absolute;
+    top: 1%;
+    right: 4%;
+    
+}
+
+/* Estilos para el texto de la cita */
+.quote {
+    font-size: 24px;
+    color: #eae7e7;
+    margin-bottom: 20px;
+}
+
+#ct{
+    height:150px; 
+    width:370px;
+    border:1px solid #f1c40f;
+    margin: 100px auto;
+    text-align:center;
+    position:relative;
+    color:#fff;
+    padding:15px;
+}
+
+#ct h3 {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size:21px;
+}
+
+span{
+  background:#1D1F20;
+  color:#f1c40f;
+  padding:0 10px;
+  font-size:20px;
+  position:relative; 
+  top:-28px;
+}
+.corner{
+    height:30px;
+  width:30px;
+  border-radius:50%;
+  border:1px solid #fff;
+  transform:rotate(-45deg);  
+  position:absolute;
+  /* background:#8f9090; */
+}
+
+#left_top{
+  top:-16px;
+  left:-16px;
+  border-color: transparent transparent #f1c40f transparent ;
+}
+#right_top{
+  top:-16px;
+  right:-16px;
+  border-color: transparent transparent  transparent  #f1c40f;
+}
+#left_bottom{
+  bottom:-16px;
+  left:-16px;
+  border-color:transparent #f1c40f transparent ;
+}
+#right_bottom{
+  bottom:-16px;
+  right:-16px;
+  border-color:#f1c40f transparent #f1c40f transparent;
+}
